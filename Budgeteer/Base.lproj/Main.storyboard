@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LibreBarcode39ExtendedText-Regular.ttf">
+            <string>LibreBarcode39ExtendedText-Regular</string>
+        </array>
+        <array key="Sniglet-Regular.ttf">
+            <string>Sniglet-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Budgeteer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="Budgeteer" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budgeteer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6J-RL-kwB">
+                                <rect key="frame" x="32" y="84" width="311" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="184" id="1hI-ll-shN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LibreBarcode39ExtendedText-Regular" family="Libre Barcode 39 Extended Text" pointSize="34"/>
+                                <color key="textColor" red="0.88554106372802255" green="0.90373383040114641" blue="0.94400707335052092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spent Yesterday:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pj-II-VwZ">
+                                <rect key="frame" x="120.66666666666669" y="518" width="134" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="rAg-2A-PcJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Sniglet-Regular" family="Sniglet" pointSize="18"/>
+                                <color key="textColor" red="0.88554106372802255" green="0.90373383040114641" blue="0.94400707335052092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spent Today:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnT-JU-vgw">
+                                <rect key="frame" x="136" y="194" width="103" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="103" id="FP6-sf-8Bl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Sniglet-Regular" family="Sniglet" pointSize="18"/>
+                                <color key="textColor" red="0.88554106372802255" green="0.90373383040114641" blue="0.94400707335052092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgA-F9-ggw">
+                                <rect key="frame" x="98" y="572" width="179" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="sS0-Sg-Ola"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Sniglet-Regular" family="Sniglet" pointSize="26"/>
+                                <color key="textColor" red="0.88554106372802255" green="0.90373383040114641" blue="0.94400707335052092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left to spend today:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJE-Fs-U9D">
+                                <rect key="frame" x="108.66666666666669" y="370" width="158" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="qEl-d6-afb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Sniglet-Regular" family="Sniglet" pointSize="18"/>
+                                <color key="textColor" red="0.88554106372802255" green="0.90373383040114641" blue="0.94400707335052092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eQ-F5-E9e">
+                                <rect key="frame" x="98" y="425" width="179" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="12h-sn-arp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Sniglet-Regular" family="Sniglet" pointSize="26"/>
+                                <color key="textColor" red="0.88554106372802255" green="0.90373383040114641" blue="0.94400707335052092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pm8-5A-Ulp">
+                                <rect key="frame" x="108" y="301" width="161" height="2"/>
+                                <color key="backgroundColor" red="0.91454545867715142" green="0.91313309353630445" blue="0.93780359455958551" alpha="0.61014524647887325" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="MDy-F7-gAP"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="£0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bbS-O0-IlZ">
+                                <rect key="frame" x="82" y="241" width="211" height="63"/>
+                                <color key="tintColor" red="0.98039215690000003" green="0.98431372549999996" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Y6Y-pt-L2y"/>
+                                </constraints>
+                                <color key="textColor" red="0.98039215690000003" green="0.98431372549999996" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Sniglet-Regular" family="Sniglet" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647059999999" green="0.21176470589999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="RnT-JU-vgw" firstAttribute="top" secondItem="t6J-RL-kwB" secondAttribute="bottom" constant="76" id="0C9-Ur-XtR"/>
+                            <constraint firstItem="5Pj-II-VwZ" firstAttribute="top" secondItem="1eQ-F5-E9e" secondAttribute="bottom" constant="46" id="5hl-0o-5K0"/>
+                            <constraint firstItem="RnT-JU-vgw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="86M-ct-Apo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pm8-5A-Ulp" secondAttribute="trailing" constant="90" id="8NU-gK-WLW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bbS-O0-IlZ" secondAttribute="trailing" constant="82" id="FlL-55-F41"/>
+                            <constraint firstItem="t6J-RL-kwB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Fly-xm-xgi"/>
+                            <constraint firstItem="bbS-O0-IlZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Imk-Fw-FJx"/>
+                            <constraint firstItem="1eQ-F5-E9e" firstAttribute="top" secondItem="KJE-Fs-U9D" secondAttribute="bottom" constant="32" id="Jq0-jn-mBT"/>
+                            <constraint firstItem="pm8-5A-Ulp" firstAttribute="centerX" secondItem="bbS-O0-IlZ" secondAttribute="centerX" constant="1" id="OX5-9W-zGu"/>
+                            <constraint firstItem="1eQ-F5-E9e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="PeK-n6-tQH"/>
+                            <constraint firstItem="t6J-RL-kwB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YZp-OM-Qqd"/>
+                            <constraint firstItem="pm8-5A-Ulp" firstAttribute="top" secondItem="bbS-O0-IlZ" secondAttribute="bottom" constant="-3" id="cxp-HJ-Z4F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YgA-F9-ggw" secondAttribute="trailing" constant="98" id="fvf-7C-0EN"/>
+                            <constraint firstItem="bbS-O0-IlZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jne-0D-oaC"/>
+                            <constraint firstItem="KJE-Fs-U9D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tbt-VG-5p0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1eQ-F5-E9e" secondAttribute="trailing" constant="98" id="uPj-G9-erp"/>
+                            <constraint firstItem="5Pj-II-VwZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uzc-71-nUc"/>
+                            <constraint firstItem="KJE-Fs-U9D" firstAttribute="top" secondItem="bbS-O0-IlZ" secondAttribute="bottom" constant="66" id="vlC-qA-wAm"/>
+                            <constraint firstItem="bbS-O0-IlZ" firstAttribute="top" secondItem="RnT-JU-vgw" secondAttribute="bottom" constant="24" id="xd9-wQ-K3Q"/>
+                            <constraint firstItem="YgA-F9-ggw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="xqa-6l-5zQ"/>
+                            <constraint firstItem="YgA-F9-ggw" firstAttribute="top" secondItem="5Pj-II-VwZ" secondAttribute="bottom" constant="31" id="xuy-WA-DY9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5Ga-bI-k0f" appends="YES" id="MUd-5z-jGr"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="leftToSpendTodayLabel" destination="1eQ-F5-E9e" id="feI-uC-1DS"/>
+                        <outlet property="spentTodayTextField" destination="bbS-O0-IlZ" id="f6M-1H-e1l"/>
+                        <outlet property="spentYesterdayLabel" destination="YgA-F9-ggw" id="yQs-Uc-4ai"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5Ga-bI-k0f">
+                    <connections>
+                        <action selector="viewTapped:" destination="BYZ-38-t0r" id="a6L-X7-99p"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="36.945812807881772"/>
+        </scene>
+    </scenes>
+</document>
