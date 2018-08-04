@@ -66,8 +66,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         spentYesterdayLabel.text = "£\(spentToday.format(f: ".2"))"
         let todaysBudget = dailyBudget + (dailyBudget - spentToday)
         
-        print("Todays budget is \(todaysBudget)")
-        
         // Reset how much the user has spent, as it's a new day, after calculating new budget for the day
         spentToday = 0
         
